@@ -1,0 +1,398 @@
+:root {
+  --date: rgb(130, 130, 130);
+  --internallink: #2b2b2b;
+  --headline: #000000;
+  --border: #cccccc;
+  --navobject: #b3b3b3;
+  --headerfooter: #1a1a1a;
+  
+  
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+header {
+  width: 100%;
+  background-color: var(--headerfooter);
+  
+}
+
+.mainheader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--headerfooter);
+
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  background-color: var(--headerfooter);
+  color: var(--navobject);
+  border-top: var(--border) solid 1px;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  margin: 40px 60px 0px 60px;
+  padding: 0px 0px 10px 0px;
+  max-width: 1440px;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+}
+
+.center {
+  border: var(--border) solid;
+  border-width: 0 1px 0 1px;
+  padding: 0 30px 0 30px;
+}
+
+article {
+  border-bottom: var(--border) solid 1px;
+}
+
+.newsitem {
+  border-bottom: var(--border) solid 1px;
+}
+
+.center .newsitem {
+  border-bottom: none;
+}
+
+.newsitem#rocky {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.right .sectionhead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: var(--border) solid 1px;
+  padding-bottom: 15px;
+  margin-top: 0px;
+}
+
+.right:last-child {
+  border-bottom: none;
+}
+.newsitem {
+  display: grid;
+  
+}
+
+.itemheadline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.divider {
+  margin: 60px 60px 20px 60px;
+  border-top: var(--border) solid 1px;
+  border-bottom: var(--border) solid 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 0px 0px 10px 0px;
+  
+}
+
+.mainreview {
+  top: 0;
+  height: 50%;
+  position: sticky;
+  align-self: start;
+  justify-self: center;
+  justify-items: center;
+  width: 463px;
+  text-align: center;
+}
+
+.reviewitem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 30px;
+  border-bottom: var(--border) solid 1px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 0px 5px 0px 5px;
+  }
+
+.internallink {
+  color: var(--internallink);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+#navitem {
+  color: var(--navobject);
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.album {
+  padding-top: 30px;
+  height: 197px;
+  width: 197px;
+}
+
+h1 {
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "EB Garamond", serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0px 0px 0px;
+}
+
+h3#article {
+  font-size: 36px;
+}
+
+.byname {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+
+.date {
+  font-size: 14px;
+  color: var(--date);
+  font-weight: 400;
+  margin: 0px 0px 20px 0px;
+}
+
+.albumname {
+  font-style: italic;
+}
+
+
+
+/* Login */
+
+.logincontainer {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+.formcontainer {
+  display: grid;
+  align-self: start;
+  
+}
+
+
+input {
+  width: 450px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.form {
+  display: grid;
+  justify-self: start;
+  align-self: start;
+  padding-left: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+.loginbutton{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  line-height: 45px;
+  border:#000000 solid 2.5px ;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 460px;
+  height: 50px;
+  letter-spacing: 1px;
+}
+
+.logindivider {
+  display: grid;
+  grid-template-columns: 200px 60px 200px;
+  justify-items: center;
+  align-items: center;
+  margin: 0px;
+}
+
+
+.loginbutton:hover{
+  background-color: red;
+}
+
+#emailbutton {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+#loginheader {
+  margin-left: 80px;
+}
+
+img#accountlogo {
+  height: 32px;
+  width: auto;
+  margin-top: 5px;
+}
+
+#form {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: 80px;
+}
+
+#demo {
+  width: 100%;
+  background-color: rgb(173, 175, 175);
+  margin-top: 30px;
+}
+
+.btn-btn-info {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* Features */
+
+.featureheader {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 230px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.featurebuttons {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#featurelogo
+{
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#featurebutton {
+  background-color: #dedede;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 20px 10px 20px;
+  margin: 0px 5px 50px 5px;
+  border-radius: 20px;
+  border: none;
+}
+#featurebutton:hover {
+  border: #000000 solid 2px;
+  color: #000000;
+}
+
+#featurebutton:active {
+  background-color: #000000;
+  color: #b3b3b3;
+}
+
+.featurearticles {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin: 40px 60px 0px 60px;
+  padding: 0px 0px 10px 0px;
+  max-width: 1440px;
+  
+}
+
+.featureright {
+  border-left: var(--border) solid 1px;
+  padding-left: 30px;
+  border-bottom: none;
+}
+
+#featureheader {
+  height: 100px;
+}
