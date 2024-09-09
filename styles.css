@@ -162,9 +162,14 @@ li {
   margin-top: 15px;
 }
 
-#navitem {
-  color: var(--navobject);
+.internallinknav {
+  color: var(--navobject);;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 15px;
 }
+
 
 img {
   object-fit: contain;
@@ -360,7 +365,7 @@ hr {
   margin-bottom: 20px;
 }
 
-#featurebutton {
+.featurebutton {
   background-color: #dedede;
   text-align: center;
   text-transform: uppercase;
@@ -371,12 +376,12 @@ hr {
   border-radius: 20px;
   border: none;
 }
-#featurebutton:hover {
+.featurebutton:hover {
   border: #000000 solid 2px;
   color: #000000;
 }
 
-#featurebutton:active {
+.featurebutton:active {
   background-color: #000000;
   color: #b3b3b3;
 }
