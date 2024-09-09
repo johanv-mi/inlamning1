@@ -296,7 +296,7 @@ button {
   margin-left: 80px;
 }
 
-img#accountlogo {
+#accountlogogoogle, #accountlogofacebook, #accountlogoapple {
   height: 32px;
   width: auto;
   margin-top: 5px;
@@ -324,6 +324,10 @@ img#accountlogo {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+hr {
+  width: 190px;
 }
 
 /* Features */
