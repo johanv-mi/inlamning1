@@ -27,16 +27,21 @@ header {
   justify-items: center;
   align-items: center;
   background-color: var(--headerfooter);
+}
 
+.signin {
+  margin-top: 20px;
 }
 
 nav {
   display: grid;
   grid-template-columns: auto;
   justify-items: center;
+  align-items: center;
   background-color: var(--headerfooter);
   color: var(--navobject);
   border-top: var(--border) solid 1px;
+  height: 50px;
 }
 
 .news {
@@ -149,9 +154,13 @@ a {
   list-style-type: none;
 }
 
+ul {
+  margin: 0px;
+}
+
 li {
     display: inline;
-    margin: 0px 5px 0px 5px;
+    margin: 5px 5px 0px 5px;
   }
 
 .internallink {
@@ -159,7 +168,6 @@ li {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
-  margin-top: 15px;
 }
 
 .internallinknav {
@@ -167,7 +175,6 @@ li {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
-  margin-top: 15px;
 }
 
 
@@ -187,6 +194,8 @@ h1 {
   font-weight: 400;
   font-size: 50px;
   color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -258,6 +267,14 @@ input {
 
 button {
   margin-bottom: 20px;
+}
+
+.btn-search {
+  scroll-margin-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  color: var(--navobject);
+  padding: none;
 }
 
 .loginbutton{
@@ -350,6 +367,10 @@ hr {
   margin-bottom: 50px;
 }
 
+.featurevbody {
+  background-color: #f7f7f7;
+}
+
 .featurebuttons {
   display: flex;
   justify-content: center;
@@ -394,6 +415,7 @@ hr {
   margin: 40px 60px 0px 60px;
   padding: 0px 0px 10px 0px;
   max-width: 1440px;
+  background-color: #ffffff;
   
 }
 
@@ -405,4 +427,30 @@ hr {
 
 #featureheader {
   height: 100px;
+}
+
+
+.offcanvas {
+  background-color: #ffffff;
+}
+
+#offcanvasTop {
+  height: 60px;
+  position: absolute;
+  top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  height: 40px;
+  width: 500px;
+  border: #000000 solid 1px;
+  margin-top: 30px;
+  border-radius: 0px;
+}
+
+.btn:hover {
+  background-color: transparent;
 }

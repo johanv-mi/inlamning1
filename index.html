@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pitchfork | The Most Trusted Voice in Music. | Pitchfork</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,15 +30,19 @@
         <div class="signin">
           <ul>
             <li>
-              <a class="internallinknav" href="#newsletter"
-                >Newsletter</a
-              >
-            </li>
+              <a class="internallinknav" href="#newsletter">Newsletter</a></li>
+            <li><a class="internallinknav" href="login.html">Sign in</a></li>
             <li>
-              <a class="internallinknav" href="login.html">Sign in</a>
-            </li>
-            <li>
-              <a class="internallinknav" href="#search">&#8981;</a>
+                <button class="btn-search" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">&#8981</button>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="searchbar">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="&#8981 Search" aria-label="Search">
+                    </form>
+                    <div class="offcanvas-body">
+                    </div>
+                  </div>
+                </div>
             </li>
           </ul>
         </div>
@@ -241,5 +246,6 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
