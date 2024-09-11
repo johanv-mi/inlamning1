@@ -99,6 +99,7 @@ article {
   border-bottom: none;
 }
 .newsitem {
+  margin-top: 10px;
   display: grid;
   
 }
@@ -274,7 +275,7 @@ button {
   background-color: transparent;
   border: none;
   color: var(--navobject);
-  padding: none;
+  padding: 0px;
 }
 
 .loginbutton{
@@ -453,4 +454,13 @@ hr {
 
 .btn:hover {
   background-color: transparent;
+}
+
+/* Video */
+
+.mainvideo {
+  text-align: center;
+  background-color: #000000;
+  
+
 }
